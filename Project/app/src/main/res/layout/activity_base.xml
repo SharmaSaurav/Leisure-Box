@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".base">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="450dp"
+        android:layout_height="842dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/second" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="360dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="rate"
+        android:text="Rate Us!"
+        android:textSize="20sp"
+        app:backgroundTint="#669A4848"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movies" />
+
+    <Button
+        android:id="@+id/button_music"
+        android:layout_width="360dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="music"
+        android:text="Want some music? tap here"
+        android:textSize="20sp"
+        app:backgroundTint="#669A4848"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/movies"
+        android:layout_width="360dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="movies"
+        android:text="Find out about some cool movies and series here"
+        android:textSize="20sp"
+        app:backgroundTint="#669A4848"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_music" />
+
+    <Button
+        android:id="@+id/Refer"
+        android:layout_width="360dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="referal"
+        android:text="Refer to a friend"
+        app:backgroundTint="#669C27B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
